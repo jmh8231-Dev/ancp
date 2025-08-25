@@ -7,7 +7,7 @@
 
 ---
 
-## ✨ 주요 기능
+##  주요 기능
 
 - **안전 중심 점화 플로우**
   - 물리 **IGN 스위치** 감지 → 카운트다운 → 온도/추력 인터록 → 핫와이어 제어
@@ -27,7 +27,7 @@
 
 ---
 
-## 🧭 하드웨어 개요
+##  하드웨어 개요
 
 | 항목 | 부품 |
 |---|---|
@@ -52,7 +52,7 @@
 
 ---
 
-## 🖥️ 펌웨어 개요
+##  펌웨어 개요
 
 - **프레임워크**: STM32Cube HAL (+ FreeRTOS 선택)
 - **GUI**: **LVGL v9** / **SquareLine Studio**(UI 설계)
@@ -80,7 +80,7 @@ void app_gui_init(void) {
 
 ---
 
-## 🧪 캘리브레이션 & EEPROM 포맷
+##  캘리브레이션 & EEPROM 포맷
 
 **ADC Zero-Offset CAL**: *(ch, gain, sps)* 조합별로 오프셋 저장. 부팅 시 전 페이지 스캔 → **이중 체크섬** 검증 → RAM LUT 로드.
 
@@ -105,7 +105,7 @@ void app_gui_init(void) {
 
 ---
 
-## 🧯 시험/점화 플로우(요약)
+## 시험/점화 플로우
 
 1. **Self-check**: 센서 연결/EEPROM 무결성/배터리 상태/PC 준비 여부
 2. **IGN SW ON** → **ANCP Test** 모드 자동 진입
@@ -122,7 +122,7 @@ else hotwire_off(); // ignition success
 
 ---
 
-## 🖼️ 스키매틱 스냅샷
+## 스키매틱 스냅샷
 
 **Main Power**  
 ![Main Power](docs/images/schematic-main-power.png)
@@ -135,7 +135,7 @@ else hotwire_off(); // ignition success
 
 ---
 
-## ⚙️ 빌드 & 플래시
+## 빌드 & 플래시
 
 - **툴체인**: STM32CubeIDE(H7), ARM GCC, (선택) FreeRTOS  
 - **Cube 설정 핵심**  
@@ -152,7 +152,7 @@ else hotwire_off(); // ignition success
 
 ---
 
-## 📂 권장 리포지토리 구조
+## 문서서 구조
 
 ```
 ancp/
@@ -170,28 +170,9 @@ ancp/
 └─ README.md
 ```
 
----
-
-## 🛣️ 로드맵
-
-- [ ] ADS1262 게인/SPS 매트릭스 + 자체 CAL/상태 플래그 정리
-- [ ] EEPROM 설정 스키마 v1 (역호환)
-- [ ] PC 툴 핸드셰이크/플로팅(Ready/Abort, 실시간 그래프)
-- [ ] RF/USB 듀얼 업링크 모드
-- [ ] 데이터 로거(PC/SD 선택)
-- [ ] 시험 리포트 자동 생성(피크 추력/압력 곡선/타임스탬프)
-
----
-
-## ⚠️ 안전 주의
+## 주의
 
 - 방폭/방염 환경, 방호벽, 소화 장비, **E-Stop** 필수
 - 시험 전 인터록/센서/전원/배선 재점검
-- 감독자 입회 및 안전거리 준수
 
 ---
-
-## 라이선스
-
-TBD (권장: MIT).  
-서드파티(LVGL, 공급사 HAL/드라이버)의 라이선스는 각 디렉토리에 명시.
