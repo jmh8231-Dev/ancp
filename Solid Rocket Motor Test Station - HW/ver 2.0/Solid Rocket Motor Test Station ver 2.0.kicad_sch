@@ -1,0 +1,143 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "469e2ca7-6169-4be1-984d-25fff1926a82")
+	(paper "A5")
+	(title_block
+		(title "ANCP Rocket Motor Test Station")
+		(date "2024-09-20")
+		(rev "2.0")
+	)
+	(lib_symbols)
+	(text "Main Power"
+		(exclude_from_sim no)
+		(at 34.544 16.51 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "346a5597-f8fa-48ee-a4ee-76931a590283")
+	)
+	(text "MCU"
+		(exclude_from_sim no)
+		(at 21.082 47.244 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "366eb92d-fdf4-4664-a6c2-7528a82f16db")
+	)
+	(polyline
+		(pts
+			(xy 57.15 41.91) (xy 10.16 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7df2dcc1-11e2-47ed-b407-17b363bd3066")
+	)
+	(polyline
+		(pts
+			(xy 57.15 10.16) (xy 57.15 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0458d84-20d5-44f5-b4be-8945eca99b78")
+	)
+	(sheet
+		(at 25.4 63.5)
+		(size 19.05 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "265fd318-4ce8-42c0-aee8-1af26c45517f")
+		(property "Sheetname" "MCU"
+			(at 25.4 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 25.4 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Solid Rocket Motor Test Station ver 2.0"
+				(path "/469e2ca7-6169-4be1-984d-25fff1926a82"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 21.59 24.765)
+		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b0a7958e-0ff2-4f3c-b742-3489a868ab73")
+		(property "Sheetname" "Battery"
+			(at 21.59 24.0534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Battery.kicad_sch"
+			(at 21.59 38.0496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Solid Rocket Motor Test Station ver 2.0"
+				(path "/469e2ca7-6169-4be1-984d-25fff1926a82"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
