@@ -152,7 +152,7 @@ else hotwire_off(); // ignition success
 
 ---
 
-## 문서서 구조
+## 문서 구조
 
 ```
 ancp/
