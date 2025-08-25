@@ -1,0 +1,4 @@
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_transform.c:110:6:lv_draw_sw_transform	15
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_transform.c:508:21:unpremultiply	2
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_transform.c:525:13:transform_argb8888_premultiplied	27
+../Drivers/lvgl/src/draw/sw/lv_draw_sw_transform.c:1027:13:transform_point_upscaled	7

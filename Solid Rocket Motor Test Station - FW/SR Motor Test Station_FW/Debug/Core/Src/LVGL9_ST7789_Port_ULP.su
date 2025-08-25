@@ -1,0 +1,3 @@
+../Core/Src/LVGL9_ST7789_Port_ULP.c:19:13:my_flush_cb	40	static
+../Core/Src/LVGL9_ST7789_Port_ULP.c:26:13:my_flush_wait_cb	16	static
+../Core/Src/LVGL9_ST7789_Port_ULP.c:32:6:lv_port_disp_init_st7789_v9_ulp	24	static
